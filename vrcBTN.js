@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         Copy URL
 // @namespace    http://tampermonkey.net/
-// @version      3
+// @version      4
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.youtube.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/NFLD99/StylesAndScripts/main/vrcBTN.js
+// @downloadURL  https://raw.githubusercontent.com/NFLD99/StylesAndScripts/main/vrcBTN.js
 // ==/UserScript==
 
 (function() {
