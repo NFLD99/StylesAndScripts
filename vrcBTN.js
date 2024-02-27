@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Copy URL
 // @namespace    http://tampermonkey.net/
-// @version      2024-01-26
+// @version      3
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.youtube.com/*
