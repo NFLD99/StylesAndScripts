@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Copy URL
 // @namespace    http://tampermonkey.net/
-// @version      6
+// @version      7
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.youtube.com/*
@@ -53,7 +53,7 @@
     function addButton() {
         var ownerElement = document.querySelector("#owner");
         if (ownerElement && !document.getElementById('copyButton')) {
-            checkBlacklist()
+            // checkBlacklist()
             var button = document.createElement('button');
             button.id = 'copyButton';
             button.innerText = 'VRC';
@@ -75,7 +75,7 @@
             ownerElement.parentNode.insertBefore(button, ownerElement.nextSibling);
         } else {
             console.log('Element with id "owner" not found or button already added.');
-            checkBlacklist()
+            // checkBlacklist()
         }
     }
     function addScript() {
