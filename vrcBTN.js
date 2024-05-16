@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Copy URL
 // @namespace    http://tampermonkey.net/
-// @version      7
+// @version      8
 // @description  try to take over the world!
-// @author       You
+// @author       NFLD99
 // @match        https://www.youtube.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // @grant        none
@@ -51,7 +51,7 @@
         });
     }
     function addButton() {
-        var ownerElement = document.querySelector("#owner");
+        var ownerElement = document.querySelector("#logo");
         if (ownerElement && !document.getElementById('copyButton')) {
             // checkBlacklist()
             var button = document.createElement('button');
