@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Copy URL
 // @namespace    http://tampermonkey.net/
-// @version      8
+// @version      9
 // @description  try to take over the world!
 // @author       NFLD99
 // @match        https://www.youtube.com/*
@@ -60,6 +60,7 @@
             button.style.background = '#272728';
             button.style.color = '#f1f1f1';
             button.style.borderRadius = '50px';
+            button.style.width = '50px';
             button.classList.add('glow-on-hover');
             button.addEventListener('click', function () {
                 var currentUrl = window.location.href;
