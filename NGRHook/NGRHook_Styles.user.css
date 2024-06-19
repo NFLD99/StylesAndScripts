@@ -1,30 +1,27 @@
 /* ==UserStyle==
 @name           NGRHook Styles
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        2.0.0
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
-@-moz-document domain("ngrhook.club")
-{
-    #profile3 > div > fieldset > div > p > span > strong,
-    #brdwelcome > ul.conl > span > strong,
+@-moz-document domain("ngrhook.club") {
+    #profile3>div>fieldset>div>p>span>strong,
+    #brdwelcome>ul.conl>span>strong,
     /* MrFluff */
-    [href = "profile.php?id=375"] > span,
+    [href="profile.php?id=375"]>span,
     /* MrsFluff */
-    [href = "profile.php?id=2140"] > span,
-    [href = "profile.php?id=ProfileIDHere"] > span
-    {
+    [href="profile.php?id=2140"]>span,
+    [href="profile.php?id=ProfileIDHere"]>span {
         text-align: center;
     }
-    #profile3 > div > fieldset > div > p > span > strong,
-    #brdwelcome > ul.conl > span > strong,
+    #profile3>div>fieldset>div>p>span>strong,
+    #brdwelcome>ul.conl>span>strong,
     /* MrFluff */
-    [href = "profile.php?id=375"] > span,
+    [href="profile.php?id=375"]>span,
     /* MrsFluff */
-    [href = "profile.php?id=2140"] > span,
-    [href = "profile.php?id=ProfileIDHere"] > span
-    {
+    [href="profile.php?id=2140"]>span,
+    [href="profile.php?id=ProfileIDHere"]>span {
         background: linear-gradient(to right, #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff) !important;
         /*     background: url('https://uploads.nfld99.com/ShareX/rgb.jpg') 50% 50%/cover!important; */
         -webkit-background-clip: text !important;
@@ -39,8 +36,7 @@
     #brdfooter #modcontrols,
     .pun td,
     .pun .rowodd,
-    #brdheader > div[style = "background:#272726!important;"]
-    {
+    #brdheader>div[style="background:#272726!important;"] {
         background: #13131180 !important;
     }
     #brdmenu,
@@ -54,28 +50,22 @@
     .pun td.tc2,
     .pun td.tc3,
     .pun td.tcmod,
-    .pun .roweven
-    {
+    .pun .roweven {
         background: #35353480 !important;
     }
-    .pun .box
-    {
+    .pun .box {
         background: #27272680 !important;
     }
-    #plans > optgroup:nth-child(1)
-    {
+    #plans>optgroup:nth-child(1) {
         background: #50c0ee40;
     }
-    #plans > optgroup:nth-child(2)
-    {
+    #plans>optgroup:nth-child(2) {
         background: #ae293440;
     }
-    #plans > optgroup:nth-child(3)
-    {
+    #plans>optgroup:nth-child(3) {
         background: #d5941640;
     }
-    .pun > .punwrap
-    {
+    .pun>.punwrap {
         -webkit-animation-name: fadeIn;
         animation-name: fadeIn;
         -webkit-animation-duration: 1s;
@@ -83,48 +73,71 @@
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
     }
-    [name = "req_email"]:not(:hover)
-    {
+    [name="req_email"]:not(:hover) {
         background-color: black;
         color: black;
         width: 100%;
         transition: 250ms all;
     }
-    [name = "req_email"]:hover
-    {
+    [name="req_email"]:hover {
         transition: 250ms all;
         width: 100%;
     }
-    @-webkit-keyframes fadeIn
-    {
-        0%
-        {
+    #status>small{
+        background: linear-gradient(90deg, rgb(0, 172, 234) 0%, rgba(0, 172, 234, .5) 50%, rgb(0, 172, 234) 100%);
+        display: inline-block;
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite linear reverse;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #status>b>strong[style="color:#ff5855;"] {
+        background: linear-gradient(90deg, rgba(255, 88, 85, 1) 0%, rgba(255, 88, 85, .5) 50%, rgba(255, 88, 85, 1) 100%);
+        display: inline-block;
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite linear;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #status>b>strong[style="color:#85ff2c"],
+    #status>b>strong[style="color:#85ff2c;"] /* Both Because LX didnt have OCD... */ {
+        background: linear-gradient(90deg, rgba(133, 255, 44, 1) 0%, rgba(133, 255, 44, .5) 50%, rgba(133, 255, 44, 1) 100%);
+        display: inline-block;
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite linear;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    @keyframes shimmer {
+        0%,
+        100% {
+            background-position: 200% 0;
+        }
+        100% {
+            background-position: -200% 0;
+        }
+    }
+    @-webkit-keyframes fadeIn {
+        0% {
             opacity: 0;
         }
-        100%
-        {
+        100% {
             opacity: 1;
         }
     }
-    @keyframes fadeIn
-    {
-        0%
-        {
+    @keyframes fadeIn {
+        0% {
             opacity: 0;
         }
-        100%
-        {
+        100% {
             opacity: 1;
         }
     }
-    @keyframes rainbow
-    {
-        from
-        {
+    @keyframes rainbow {
+        from {
             -webkit-filter: hue-rotate(0);
         }
-        to
-        {
+        to {
             -webkit-filter: hue-rotate(360deg);
         }
     }
