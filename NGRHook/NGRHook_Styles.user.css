@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           NGRHook Styles
 @namespace      github.com/openstyles/stylus
-@version        2.0.0
-@description    A new userstyle
+@version        3
+@description    Styles the Fourms
 @author         Me
 ==/UserStyle== */
 @-moz-document domain("ngrhook.club") {
@@ -65,6 +65,17 @@
     #plans>optgroup:nth-child(3) {
         background: #d5941640;
     }
+    .pun .postright,
+    .pun .postleft,
+    .pun .postfootleft,
+    .pun .postfootright {
+        background: transparent;
+    }
+    .pun .postfootright,
+    .pun .postright,
+    .pun .postfootleft {
+        border-color: transparent;
+    }
     .pun>.punwrap {
         -webkit-animation-name: fadeIn;
         animation-name: fadeIn;
@@ -83,7 +94,7 @@
         transition: 250ms all;
         width: 100%;
     }
-    #status>small{
+    #status>small {
         background: linear-gradient(90deg, rgb(0, 172, 234) 0%, rgba(0, 172, 234, .5) 50%, rgb(0, 172, 234) 100%);
         display: inline-block;
         background-size: 200% 100%;
@@ -100,7 +111,9 @@
         -webkit-text-fill-color: transparent;
     }
     #status>b>strong[style="color:#85ff2c"],
-    #status>b>strong[style="color:#85ff2c;"] /* Both Because LX didnt have OCD... */ {
+    #status>b>strong[style="color:#85ff2c;"]
+    /* Both Because LX didnt have OCD... */
+        {
         background: linear-gradient(90deg, rgba(133, 255, 44, 1) 0%, rgba(133, 255, 44, .5) 50%, rgba(133, 255, 44, 1) 100%);
         display: inline-block;
         background-size: 200% 100%;
