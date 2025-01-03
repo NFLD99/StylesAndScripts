@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Support Btns
 // @namespace    http://tampermonkey.net/
-// @version      2024-10-27
+// @version      1337
 // @description  try to take over the world!
 // @author       You
 // @match        https://ngrhook.club/support/tickets/reply*
